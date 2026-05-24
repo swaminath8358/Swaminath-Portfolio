@@ -10,7 +10,6 @@
     "lint": "eslint src --ext js,jsx"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "framer-motion": "^11.2.10",
     "g": "^2.0.1",
     "lucide-react": "^0.383.0",
