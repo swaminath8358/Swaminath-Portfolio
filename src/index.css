@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #6c63ff;
+  --accent2: #a78bfa;
+  --accent3: #38bdf8;
+  --green: #34d399;
+  --grad: linear-gradient(135deg, #6c63ff, #a78bfa);
+  --grad2: linear-gradient(135deg, #38bdf8, #6c63ff);
+}
+
+* { scroll-behavior: smooth; }
+
+body {
+  @apply font-body bg-dark-bg text-white overflow-x-hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { @apply bg-dark-bg; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+.gradient-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg { background: var(--grad); }
+
+.skill-bar-fill {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--grad);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-bar-fill.cyan { background: var(--grad2); }
+.skill-bar-fill.green { background: linear-gradient(90deg, #34d399, #059669); }
