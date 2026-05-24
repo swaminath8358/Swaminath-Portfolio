@@ -29,7 +29,7 @@ export default function About() {
               />
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-3xl bg-[#1c1c28] border border-white/7 relative overflow-hidden">
                 <img
-                  src="Image/avatar.jpeg"
+                  src="/Image/avatar.jpeg"
                   alt="Swaminath Nalwar"
                   className="w-full h-full object-cover object-top"
                 />
